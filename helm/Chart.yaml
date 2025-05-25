@@ -3,3 +3,31 @@ name: frontend
 version: 1.0.0 # chart version
 description: This is frontend deployment
 appVersion: 1.0.0 # nginx app version
+
+
+# create repo https://github.com/DAWS-2025-82S/36-frontend-deploy.git
+
+# 36-frontend-deploy
+
+# copy the frontend charts code from 23-helm-expense/frontend  to 36-frontend-deploy/helm directory
+
+# Update deployment.yaml file to provice ECR image URL instead of dockerhub
+
+# add files values-dev.yaml and values-prod.yaml for dev and prod
+
+# Add the target group arn in values-dev.yaml file created using terraform
+
+# add tgb.yaml file for Target Group Binding
+
+# INGRESS
+
+# load balancer --> listener --> rule --> target group --> IP
+
+# TargetGroupBinding
+
+# load balancer --> listener --> rule --> target group --> target group binding adds the pod IP to target group
+
+# In Jenkins Create job for 36-frontend-deploy repo under EXPENSE-->FRONTEND-->frontend-cd folder
+
+#  https://github.com/DAWS-2025-82S/36-frontend-deploy.git
+ 
